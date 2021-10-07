@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>ES 1</title>
+    </head>
+    <body>
+        <button onclick="console.log('click da evento')"></button>
+        <button onclick="funzioneClick()">cliccami da script</button>cliccami da script</button>
+        <button>cliccami da listener</button>
+
+        <script>
+            var funzioneClick = function(){
+                console.log("cliccami da script");
+            };
+            //funzioneClick();
+
+            var funzioneClickAscontatore = function() {
+                colsole.log("click da evento");
+            };
+
+            var bottone3 = document.getElementByID("btn3");
+            bottone3.addEventListener("click",
+            function(){
+                funzioneClick("listener");
+
+                var div1 = document.getElementById("div1");
+
+                document.getElementById("div1").
+                  setAttribute("style", "background-colore: pink");
+                ("div1").innerHTML = "<h1>TI AVEVO DETTO DI NON CLICCARE MONA.</H1>"
+
+
+            }
+          );
+        </script>
+    </body>
+</html>
